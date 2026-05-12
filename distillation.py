@@ -37,15 +37,15 @@ def calculate_kl(p, q):
 # ==========================================
 # 3. 사이드바 UI
 # ==========================================
-st.sidebar.title("🧪 지식 증류 패널")
+st.sidebar.title("지식 증류 패널")
 st.sidebar.markdown("Teacher의 지식을 Student에게 전달!")
 
 st.sidebar.markdown("---")
-st.sidebar.subheader("🌡️ 1. Softmax 온도 조절")
+st.sidebar.subheader("1. Softmax 온도 조절")
 temperature = st.sidebar.slider("온도 (Temperature, T)", min_value=1.0, max_value=20.0, value=5.0, step=0.5)
 
 st.sidebar.markdown("---")
-st.sidebar.subheader("🎯 2. KL 발산 최적화 목표")
+st.sidebar.subheader("2. KL 발산 최적화 목표")
 kl_type = st.sidebar.radio(
     "Student 모델의 학습 방향 선택",
     ["Forward KL (Mean-seeking)", "Reverse KL (Mode-seeking)"]
@@ -56,7 +56,7 @@ kl_type = st.sidebar.radio(
 # ==========================================
 st.title("🎓 지식 증류(Knowledge Distillation) 시뮬레이터")
 
-tab1, tab2 = st.tabs(["🌡️ 1. 소프트맥스 온도 조절 (Dark Knowledge)", "📉 2. Forward vs Reverse KL 발산"])
+tab1, tab2 = st.tabs(["1. 소프트맥스 온도 조절 (Dark Knowledge)", "2. Forward vs Reverse KL 발산"])
 
 # ------------------------------------------
 # 탭 1: 소프트맥스 온도 조절
