@@ -37,11 +37,11 @@ def calculate_kl(p, q):
 # ==========================================
 # 3. 사이드바 UI
 # ==========================================
-st.sidebar.title("지식 증류 패널")
+st.sidebar.title("🧪 지식 증류 패널")
 st.sidebar.markdown("Teacher의 지식을 Student에게 전달!")
 
 st.sidebar.markdown("---")
-st.sidebar.subheader("1. Softmax 온도 조절")
+st.sidebar.subheader("🌡️ 1. Softmax 온도 조절")
 temperature = st.sidebar.slider("온도 (Temperature, T)", min_value=1.0, max_value=20.0, value=5.0, step=0.5)
 
 st.sidebar.markdown("---")
