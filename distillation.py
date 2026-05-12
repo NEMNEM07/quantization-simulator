@@ -54,7 +54,7 @@ kl_type = st.sidebar.radio(
 # ==========================================
 # 4. 메인 화면: 탭 구성
 # ==========================================
-st.title("🎓 지식 증류(Knowledge Distillation) 시뮬레이터")
+st.title("지식 증류(Knowledge Distillation) 시뮬레이터")
 
 tab1, tab2 = st.tabs(["1. 소프트맥스 온도 조절 (Dark Knowledge)", "2. Forward vs Reverse KL 발산"])
 
